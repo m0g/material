@@ -6,7 +6,7 @@ describe('mdInkRipple diretive', function() {
     var elem = $compile('<div md-ink-ripple="#bbb"></div>')($rootScope.$new()),
         container, ripple;
 
-    expect(elem.children('.md-ripple-container').length).toBe(0);
+    expect(elem.children('.md-ripple-container').length).toBe(1);
 
     elem.controller('mdInkRipple').createRipple(0, 0);
     container = elem.children('.md-ripple-container');

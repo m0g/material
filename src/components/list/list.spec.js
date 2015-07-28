@@ -112,7 +112,7 @@ describe('mdListItem directive', function() {
     var listItem = setup('<md-list-item ng-click="sayHello()"><p>Hello World</p><md-icon class="md-secondary" ng-click="goWild()"></md-icon></md-list-item>');
     var firstChild = listItem.children()[0];
     expect(firstChild.nodeName).toBe('MD-BUTTON');
-    expect(firstChild.childNodes.length).toBe(1);
+    expect(firstChild.childNodes.length).toBe(2);
     var secondChild = listItem.children()[1];
     expect(secondChild.nodeName).toBe('MD-BUTTON');
   });
